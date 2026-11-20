@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .ok {
+        display :flex;
+        justify-content: space-around;
+    }
+    #logo {
+        font-size: 20px;
+        
+    }
+    #next {
+        display :flex;
+        
+        gap:2em;
+    }
+    #bar {
+        display:none;
+    }
+    @media screen and (max-width:768px) {
+        #next{ 
+            display:none;
+
+        }
+        #bar {
+            display:block;
+            cursor: pointer;
+            
+        }
+        
+    }
+        .Div{     
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            
+  
+  
+    }
+    
+
+</style>
+
+<body>
+    <div class="ok">
+        <div id ="logo">Logo</div>
+        <div id ="next">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+            
+        </div>
+        <div id="bar">
+            <div class="Div"></div>
+            <div class="Div"></div>
+            <div class="Div"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

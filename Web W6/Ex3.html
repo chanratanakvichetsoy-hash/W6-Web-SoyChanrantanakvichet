@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+.first{
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+.big {
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:20px;
+}
+
+.center{
+    
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    
+}
+#main{
+    background-color: rgb(106, 110, 113);
+    margin:10px;
+    padding:10px;
+}
+#bar{
+    background-color: rgb(93, 116, 136);
+    margin:10px;
+    padding:10px;
+}
+
+@media screen and (min-width:600px)  {
+
+    .center{
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+}
+@media screen and (min-width:900px) {
+    #main {
+        flex-grow: 1;
+    }
+    #bar {
+        flex-shrink: 1;
+    }
+    .big {
+        padding:30px;
+    }
+
+    
+}
+
+
+</style>
+
+
+
+<body>
+    <div class="first">
+        <div ><header class="big">Responsive Header</header></div>
+        <div class="center">
+            <div id="main">Main Content</div>
+            <div id="bar">Sidebar</div>
+        </div>
+        <div><footer class="big">Footer</footer></div>
+    </div>
+    
+</body>
+</html>
